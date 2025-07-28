@@ -1,0 +1,73 @@
+[
+  {
+    "nombre": "NodeJS",
+    "icono-light": "/tec-nodejs.svg",
+    "icono-dark": "/tec-nodejs.svg"
+  }
+  ,
+  {
+    "nombre": "Express",
+    "icono-light": "/tec-light-express.svg",
+    "icono-dark": "/tec-dark-express.svg"
+  },
+  {
+    "nombre" : "Typescript",
+    "icono-light": "/tec-typescript.svg",
+    "icono-dark": "/tec-typescript.svg"
+  },
+  {
+    "nombre": "JavaScript",
+    "icono-light": "/tec-javascript.svg",
+    "icono-dark": "/tec-javascript.svg"
+  },
+  {
+    "nombre": "Python",
+    "icono-light": "/tec-python.svg",
+    "icono-dark": "/tec-python.svg"
+  },
+  {
+    "nombre" : "MySQL",
+    "icono-light": "/tec-mysql.svg",
+    "icono-dark": "/tec-mysql.svg"
+  },
+  {
+    "nombre" : "Java",
+    "icono-light": "/tec-java.svg",
+    "icono-dark": "/tec-java.svg"
+  },
+  {
+    "nombre" : "JWT",
+    "icono-light": "/tec-jwt.svg",
+    "icono-dark": "/tec-jwt.svg"
+  },
+  {
+    "nombre": "HTML",
+    "icono-light": "/tec-html5.svg",
+    "icono-dark": "/tec-html5.svg"
+  },
+  {
+    "nombre": "CSS",
+    "icono-light": "/tec-css.svg",
+    "icono-dark": "/tec-css.svg"
+  },
+  {
+    "nombre" : "Bootstrap",
+    "icono-light": "/tec-bootstrap.svg",
+    "icono-dark": "/tec-bootstrap.svg"
+  },
+  {
+    "nombre" : "Tailwind",
+    "icono-light": "/tec-tailwindcss.svg",
+    "icono-dark": "/tec-tailwindcss.svg"
+  },
+  {
+    "nombre" : "Git",
+    "icono-light": "/tec-git.svg",
+    "icono-dark": "/tec-git.svg"
+  },
+  {
+    "nombre": "Astro",
+    "icono-light": "/tec-light-astro.svg",
+    "icono-dark": "/tec-dark-astro.svg"
+  }
+]

@@ -1,0 +1,15 @@
+---
+import Badges from "./Badges.astro";
+import technologies from "../content/technologies/technologies.json";
+---
+
+
+<div class="flex flex-wrap gap-2 w-full pt-4 px-2 lg:px-0">
+  {technologies.map((icon: any) => (
+    <Badges
+      nombre={icon.nombre}
+      iconoLight={icon["icono-light"]}
+      iconoDark={icon["icono-dark"]}
+    />
+  ))}
+</div>

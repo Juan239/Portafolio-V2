@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Title from '../components/Title.astro';
+import About from '../components/About.astro';
+import Socials from '../components/Socials.astro';
+import Experience from '../components/Experience.astro';
+import Technologies from '../components/Technologies.astro';
+import CV from '../components/CV.astro';
+
+
+
+import { getCollection } from 'astro:content';
+
+const experiencias = await getCollection('experience')
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+---
+
+<Layout>
+	<Title />
+	<Technologies />
+	<About />
+	<Socials />
+	<Experience experiencias={experiencias} />
+	<CV />
+</Layout>

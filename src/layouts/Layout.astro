@@ -1,0 +1,19 @@
+---
+import '../styles/global.css';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Juan Rodríguez</title>
+	</head>
+	<body class="mx-auto h-screen px-10 lg:px-0 max-w-4xl m-0 bg-light-fondo dark:bg-dark-fondo text-light-primario dark:text-dark-primario"> <!--border-r-2 border-l-2 border-gray-200 -->
+		<div class="pb-24 lg:pb-4">
+			<slot />
+		</div>
+	</body>
+</html>
