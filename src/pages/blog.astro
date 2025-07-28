@@ -1,11 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Socials from '../components/Socials.astro';
+
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort((a, b) => b.data.id - a.data.id);
 ---
 
 <Layout>
   <h1 class="text-4xl lg:text-6xl font-bold text-left pt-14 pb-3">Blog</h1>
-  <p class="text-left text-lg lg:text-2xl">Actualmente no esta disponible el blog</p>
+
+  <div class="flex flex-col gap-4 mt-4">
+    {posts.map((post) => {
+      const { data } = post;
+      const { id, fecha, titulo } = data;
+
+      return (
+        <a href={`/blog/${id}`} class="text-light-primario dark:text-dark-primario hover:underline border-2 border-light-primario/50 dark:border-dark-primario/50 *:hover:border-light-primario dark:*:hover:border-dark-primario p-4 rounded-lg transition duration-300 hover:scale-105">
+          <h2 class="text-2xl font-semibold">{titulo}</h2>
+          <p class="text-light-secundario dark:text-dark-secundario text-sm">{fecha}</p>
+        </a>
+      );
+    })}
+  </div>
 
   <Socials />
 </Layout>

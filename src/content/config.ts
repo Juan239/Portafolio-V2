@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content";
+import { date } from "astro:schema";
 
 const experience = defineCollection({
   schema: z.object({
@@ -11,6 +12,15 @@ const experience = defineCollection({
   })
 })
 
+const blog = defineCollection({
+  schema:z.object({
+    id: z.number(),
+    fecha: z.string(),
+    titulo: z.string(),
+  })
+})
+
 export const collections = {
   experience,
+  blog
 };
