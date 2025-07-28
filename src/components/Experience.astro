@@ -14,9 +14,13 @@ type Experiencia = {
 
 const { experiencias } = Astro.props;
 
+const experienciasOrdenadas = [...experiencias].sort((a, b) => {
+  return Number(b.data.id) - Number(a.data.id);
+});
+
 // Procesar render() de cada entrada
 const experienciasRenderizadas = await Promise.all(
-  (experiencias as Experiencia[]).map(async (exp: Experiencia) => {
+  (experienciasOrdenadas as Experiencia[]).map(async (exp: Experiencia) => {
     const rendered = await exp.render();
     return {
       id: exp.id,
