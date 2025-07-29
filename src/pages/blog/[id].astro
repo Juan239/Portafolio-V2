@@ -23,15 +23,15 @@ const { Content } = await render(post);
   <Socials/>
   <article class="mx-auto mt-10 text-light-primario dark:text-dark-primario">
     <div class="flex items-center gap-4">
-      <a href="/blog" class="flex items-center">
-        <img src="/light-back.svg" alt="Volver atrás" class="min-w-6 w-10 block dark:hidden"/>
-        <img src="/dark-back.svg" alt="Volver atrás" class="min-w-6 w-10 hidden dark:block"/>
+      <a href="/blog" class="flex items-center h-12">
+        <img src="/light-back.svg" alt="Volver atrás" class="min-w-6 w-10 block dark:hidden self-center"/>
+        <img src="/dark-back.svg" alt="Volver atrás" class="min-w-6 w-10 hidden dark:block self-center"/>
       </a>
-      <h1 class="text-3xl lg:text-4xl font-bold mb-2 text-light-primario dark:text-dark-primario flex items-center">
-      {titulo}
+      <h1 class="text-3xl lg:text-4xl font-bold text-light-primario dark:text-dark-primario flex items-center h-12">
+        {titulo}
       </h1>
     </div>
-    <p class="text-light-secundario dark:text-dark-secundario text-sm mt-10 mb-1">{fecha}</p>
+    <p class="text-light-secundario dark:text-dark-secundario text-sm mt-6 mb-1">{fecha}</p>
     <div class="prose dark:prose-invert w-full max-w-none">
       <Content />
     </div>
