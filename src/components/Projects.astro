@@ -1,16 +1,33 @@
-<div class="py-6 px-2">
+<div class="flex flex-col py-6 px-2 justify-between gap-5">
   <h2 class="text-4xl lg:text-6xl font-bold text-light-primario dark:text-dark-primario">Proyectos</h2>
 
-  <div class="flex flex-col md:flex-row mt-4">
 
+   <div class="flex flex-col md:flex-row mt-4 md:items-center">
+    <a href="https://app.streamelp.lat" target="_blank" class="w-full md:w-1/3">
+      <img
+        src="/streamelp.webp"
+        alt="Imagen del proyecto streamelp"
+        class="w-5/6 h-auto object-contain rounded dark:border dark:border-white dark:border-opacity-50"
+      >
+    </a>
+    <div class="flex flex-col mt-3 md:mt-0 w-full md:w-2/3 pl-4">
+      <a href="https://app.streamelp.lat" target="_blank" class="text-sm lg:text-xl font-semibold">Streamelp</a>
+
+      <p class="prose text-sm lg:text-base light:text-light-primario dark:text-dark-primario">
+        Streamelp es un proyecto en versión beta, que brinda a streamers un lugar donde realizar actividades con su comunidad, en su primera versión los streamers pueden crear "consultorios" donde la comunidad puede subir sus respuestas para luego ser leidas en stream. Cuenta con integración con Kick para poder iniciar sesión.
+      </p>
+    </div>
+  </div>
+
+
+  <div class="flex flex-col md:flex-row mt-4 md:items-center">
     <a href="https://chat.devjuan.cl" target="_blank" class="w-full md:w-1/3">
       <img
         src="/chatrooms.webp"
         alt="Imagen del proyecto chatrooms"
-        class="w-full h-auto object-contain"
+        class="w-5/6 h-auto object-contain rounded dark:border dark:border-white dark:border-opacity-50"
       >
     </a>
-
     <div class="flex flex-col mt-3 md:mt-0 w-full md:w-2/3 pl-4">
       <a href="https://chat.devjuan.cl" target="_blank" class="text-sm lg:text-xl font-semibold">ChatRooms</a>
 
@@ -18,6 +35,6 @@
         Chatrooms es un proyecto que hice para poder probar la VPS que configuré para subir mis proyectos personales. El backend está programado con NodeJS, Express y Typescript, y utiliza Socket.IO para la gestión de websockets. El frontend fue desarrollado con React y Tailwind, algo sencillo, más que nada para probar el correcto funcionamiento del backend.
       </p>
     </div>
-
   </div>
+
 </div>
