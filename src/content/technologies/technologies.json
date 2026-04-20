@@ -16,6 +16,21 @@
     "icono-dark": "/tec-typescript.svg"
   },
   {
+    "nombre" : "MySQL",
+    "icono-light": "/tec-mysql.svg",
+    "icono-dark": "/tec-mysql.svg"
+  },
+  {
+    "nombre": "PostgreSQL",
+    "icono-dark" : "tec-postgresql.svg",
+    "icono-light" : "tec-postgresql.svg"
+  },
+  {
+    "nombre" : "Prisma",
+    "icono-dark" : "tec-dark-prisma.svg",
+    "icono-light" : "tec-light-prisma.svg"
+  },
+  {
     "nombre": "JavaScript",
     "icono-light": "/tec-javascript.svg",
     "icono-dark": "/tec-javascript.svg"
@@ -24,11 +39,6 @@
     "nombre": "Python",
     "icono-light": "/tec-python.svg",
     "icono-dark": "/tec-python.svg"
-  },
-  {
-    "nombre" : "MySQL",
-    "icono-light": "/tec-mysql.svg",
-    "icono-dark": "/tec-mysql.svg"
   },
   {
     "nombre" : "Java",
