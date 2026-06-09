@@ -1,5 +1,5 @@
 ---
-id: 202604202
+id: 20260420
 fecha: 20-04-2026
 titulo: "Control de asistencia"
 ---
